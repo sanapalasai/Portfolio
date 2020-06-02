@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sai Shankar</title>
+	<link id="style1" rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/2834cd3ed2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section id="first" class="container first" onmouseenter="focu(1)" onmouseover="change1(this)" onmouseout="change2(this)" >
+		<video autoplay loop muted id= "myvideo">
+			<source src="images/cse1.mp4" type="video/mp4">
+		</video>
+		<script type="text/javascript">
+			var v = document.getElementById("myvideo");
+			v.autoplay=true;
+			v.load();
+			v.play();
+		</script>
+		<header>
+			<h1>Sanapala Sai Shankar</h1>
+			<p>Front End Web Developer</p>
+			<p>Mobile App Developer</p>
+		</header>
+		<section class="csep">
+			<p> I am currently pursuing my undergraduate programme B.Tech in <b>Anurag University</b>  (formerly known as Anurag Group of Institutions) and I belong to the department Computer Science and Engineering. I have chosen this field because of my interest in mathematics which has lead me towards programming. I am an enthusiastic tech learner. </p>
+		</section>
+	</section>
+	
+	<section id="second" class= "container second" onmouseenter="focu(2)" onmouseover="change1(this)" onmouseout="change2(this)">
+		<section class="details pad">
+			<table>
+				<tr>
+					<td><b>DOB :</b> </td>
+					<td> <i>22<sup>nd</sup>,october 2000</i></td>
+				</tr>
+				<tr>
+					<td> <b>Nationality :</b></td>
+					<td><i>India</i></td>
+				</tr>
+				<tr>
+					<td><b>Languages known :</b></td>
+					<td>English, Hindi, Telugu</td>
+				</tr>
+			</table>
+		</section>
+	</section>
+
+	<section id="third" class = "container third" onmouseenter="focu(3)" onmouseover="change1(this)" onmouseout="change2(this)">
+		<section class="skills1 pad">
+			<h2>Programming Languages Known</h2>
+			<ul>
+				<li>C programming	</li>
+				<li>C++ programming</li>
+				<li>Java </li>
+				<li>Python</li>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+			</ul>
+		</section>
+
+		<section class="skills2 pad">
+			<h2>Skills</h2>
+			<ul>
+				<li>Mobile App Development</li>
+				<li>Front End Web Development</li>
+				<li>Machine Learning</li>
+			</ul>
+		</section>
+	</section>
+
+	<section id="fourth" class="container fourth" onmouseenter="focu(4)" onmouseover="change1(this)" onmouseout="change2(this)">
+		<section class="achivement pad" style="font-size: 2.5vw;">
+			<h2>Achivement</h2>
+			<p>Secured 93% (<span style="color: #ffc400;">GOLD</span> + ELITE) in Programming, Data Structures and Algorithms using Python</p>
+		</section>
+	</section>
+	
+	<section id="dots">
+		<a href="#first"><span class="dot active"></span></a><br>
+		<a href="#second"><span class="dot"></span></a><br>
+		<a href="#third"><span class="dot"></span></a><br>
+		<a href="#fourth"><span class="dot"></span></a>
+	</section>
+
+	<footer class="last">
+		<section class="contact">
+			<h3>Contact Details : </h3>
+			<span><i class="fab fa-whatsapp" style="color: #76ff03"></i><p>+91 6281143858</p></span>
+			<span><i class="fas fa-at" style="color: #90a4ae"></i><p>sanapalasaishankar2000@gmail.com</p></span>
+			<span><i class="fab fa-twitter" style="color: #0091ea"></i><p>@SanapalaShankar</p></span>
+		</section>
+	</footer>
+</body>
+<script type="text/javascript">
+	function focu(x) {
+		var s = document.getElementsByClassName("dot");
+		for(i=0;i<s.length;i++)
+		s[i].className = s[i].className.replace("active","");
+		s[x-1].className += " active";
+	}
+</script>
+<script type="text/javascript">
+	function change1(x) {
+		if(innerWidth >= 1150)
+		x.style.height = "100vh";
+	}
+
+	function change2(x) {
+		if(innerWidth >= 1150)
+		{
+			x.style.height = "40vh";
+			if(document.getElementById("first") == x)
+				x.style.height = "80vh";
+			else if(document.getElementById("fourth") == x)
+				x.style.height = "55vh";
+		}
+	}
+</script>
+</html>

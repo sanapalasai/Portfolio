@@ -6,6 +6,9 @@
 	font-size: 4vw;
 	font-style: italic;
 }
+li{
+	list-style-type: none;
+}
 .container{
 	display: flex;
 	width: 100%;
